@@ -21,7 +21,7 @@ sun: $(TASK)$
 
 test: $(TASK)$
 	./$(TASK) 2000 "input_data/ellipse_N_02000.gal" 200 0.00001 0.255 0
-	cd compare_gal_files && ./a.out 2000 "../result.gal" "../ref_output_data/ellipse_N_02000_after200steps.gal" && cd ..
+	cd compare_files && ./a.out 2000 "../result.gal" "../ref_output_data/ellipse_N_02000_after200steps.gal" && cd ..
 
 
 ${OBJS}: $(SRC)
